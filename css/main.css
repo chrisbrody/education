@@ -100,15 +100,14 @@ img {
     color: var(--color-white);
 }
 
-.btn.primary {
-    background: transparent;
-    border-color: var(--color-danger);
+.btn-primary {
+    background: var(--color-danger);
     color: var(--color-white);
 }
 
-/* 
-    NAVIGATION
-*/
+/* ======================================
+    START OF NAVBAR
+====================================== */
 nav {
     background: var(--color-transparent);
     height: 5rem;
@@ -143,3 +142,15 @@ nav button {
 .nav__menu a:hover {
     color: var(--color-bg2);
 }
+/* ======================================
+    END OF NAVBAR
+====================================== */
+
+
+/* ======================================
+    START OF HERO HEADER
+====================================== */
+
+/* ======================================
+    END OF HERO HEADER
+====================================== */
