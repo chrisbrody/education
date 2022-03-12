@@ -266,3 +266,40 @@ header {
 /* ======================================
     END OF CATEGORIES
 ====================================== */
+
+/* ======================================
+    START OF COURSES
+====================================== */
+.courses {
+    margin-top: 10rem;
+}
+
+.courses__container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+.course {
+    background: var(--color-bg1);
+    border: 1px solid transparent;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: var(--color-transparent);
+    border-color: var(--color-primary);
+}
+
+.course__info {
+    padding: 2rem;
+}
+
+.course__info p {
+    font-size: 0.9rem;
+    margin: 1.2rem 0 2rem;
+}
+/* ======================================
+    END OF COURSES
+====================================== */
