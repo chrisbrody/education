@@ -50,7 +50,7 @@ section {
 
 section h2 {
     margin-bottom: 4rem;
-    text-align: cetner;
+    text-align: center;
 }
 
 h1,
@@ -302,4 +302,50 @@ header {
 }
 /* ======================================
     END OF COURSES
+====================================== */
+
+/* ======================================
+    START OF FAQs
+====================================== */
+.faqs {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    align-items: center;
+    background: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    gap: 1.4rem;
+    height: fit-content;
+    padding: 2rem;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    display: none;
+    margin-top: 0.8rem;
+}
+
+.faq.open p {
+    display: block;
+}
+/* ======================================
+    END OF FAQs
 ====================================== */
