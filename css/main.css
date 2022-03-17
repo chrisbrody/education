@@ -349,3 +349,48 @@ header {
 /* ======================================
     END OF FAQs
 ====================================== */
+
+/* ======================================
+    START OF TESTIMONIALS
+====================================== */
+.testimonials__container {
+    margin-bottom: 5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+.testimonial {
+    padding-top: 2rem;
+}
+.avatar {
+    border: 1rem solid var(--color-bg1);
+    border-radius: 50%;
+    height: 6rem;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    width: 6rem;
+}
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-primary);
+    margin-top: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+.testimonial__body::before {
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    content: "";
+    display: block;
+    height: 3rem;
+    left: 50%;
+    position: absolute;
+    top: -1.5rem;
+    transform: rotate(45deg);
+    width: 3rem;
+}
+/* ======================================
+    END OF TESTIMONIALS
+====================================== */
+
