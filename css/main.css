@@ -384,7 +384,7 @@ header {
     content: "";
     display: block;
     height: 3rem;
-    left: 50%;
+    left: 45%;
     position: absolute;
     top: -1.5rem;
     transform: rotate(45deg);
