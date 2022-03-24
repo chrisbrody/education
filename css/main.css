@@ -490,7 +490,7 @@ footer ul li a:hover {
         flex-direction: column;
         gap: 0;
         height: fit-content;
-        right: 5%;
+        right: 0;
         position: fixed;
         top: 5rem;
         width: 18rem;
@@ -588,4 +588,83 @@ footer ul li a:hover {
 }
 /* ======================================
     END MEDIA QUIERES FOR TABLETS
+====================================== */
+
+/* ======================================
+    START MEDIA QUIERES FOR PHONES
+====================================== */
+@media screen and (max-width: 600px) {
+    /* ======= RESETS ======= */
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /* ======= NAVBAR ======= */
+    .nav__menu {
+        right: 3%;
+    }
+
+    /* ======= HEADER ======= */
+    header {
+        height: 100vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .header__left p {
+        margin-bottom: 1.3rem;
+    }
+
+    /* ======= CATEGORIES ======= */
+    .categories__left {
+        margin-right:0;
+    }
+
+    .categories__right {
+        gap: 0.7rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category {
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .category__icon {
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    /* ======= COURSES ======= */
+    .courses__container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ======= TESTIMONIALS ======= */
+    .testimonial__body {
+        padding: 1.2rem;
+    }
+
+    /* ======= FOOTER ======= */
+    .footer__container {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer__1 p {
+        margin: 1rem auto;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+    
+}
+/* ======================================
+    END MEDIA QUIERES FOR PHONES
 ====================================== */
