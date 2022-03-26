@@ -429,7 +429,40 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <!-- swiper JS -->
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        
+        <script>
+            // show/hide faq answers
+            const faqs = document.querySelectorAll('.faq');
+            let faqactive = false;
+
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    faq.classList.toggle('open');
+
+                    // change icon
+                    const icon = faq.querySelector('.faq__icon i');
+                    if(icon.className === 'uil uil-plus') {
+                        icon.className = 'uil uil-minus';
+                    } else {
+                        icon.className = 'uil uil-plus';
+                    }
+                });
+            });
+
+            // swiper testimonials
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints :{
+                    600: {
+                        slidesPerView: 2
+                    }
+                }
+            });
+        </script>
         <!-- custom JS -->
         <script src="js/main.js"></script>
         
