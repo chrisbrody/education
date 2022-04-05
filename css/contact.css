@@ -92,3 +92,59 @@ textarea {
     margin-top: 1rem;
     width: max-content;
 }
+
+/* ======================================
+    START MEDIA QUIERES FOR TABLETS
+====================================== */
+@media screen and (max-width: 1024px) {
+
+    .contact {
+        padding-bottom: 0;
+    }
+    
+    .contact__container {
+        gap: 1.5rem;
+        height: auto;
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        bottom: 0;
+        padding: 1.5rem;
+        width: auto;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+/* ======================================
+    END MEDIA QUIERES FOR TABLETS
+====================================== */
+
+/* ======================================
+    START MEDIA QUIERES FOR PHONES
+====================================== */
+@media screen and (max-width: 600px) {
+
+    .contact__container {
+        gap: 3rem;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+    
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+}
